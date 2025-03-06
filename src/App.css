@@ -36,3 +36,115 @@
     transform: rotate(360deg);
   }
 }
+
+/* Apply rounded corners and drop shadow to all images */
+img {
+  border-radius: 16px; /* Apply rounded corners with 16px radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle drop shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+img:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow effect on hover */
+}
+
+/* Exclude logo image from drop shadow */
+.logo-img {
+  box-shadow: none; /* Remove drop shadow for the logo */
+}
+
+
+header {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Places space between logo and nav */
+  align-items: center; /* Vertically aligns items in the center */
+  padding: 40px 60px; /* Optional, adds padding around the header */
+}
+
+header img {
+  max-width: 100%; /* Ensures the logo scales properly */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+nav {
+  /* Optional: Adjust the styling of your nav if needed */
+}
+nav ul {
+  display: flex; /* Displays the list items horizontally */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  list-style-type: none; /* Removes bullet points */
+}
+
+nav ul li {
+  margin-right: 20px; /* Adds space between each link */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #000; /* Sets link color */
+  font-size: 16px; /* Optional: Adjust font size */
+}
+
+nav ul li a:hover {
+  color: #ff6600; /* Optional: Adds hover effect */
+}
+
+/* Styling for the footer */
+footer {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: wrap; /*wrap items on smaller screens */
+  justify-content: space-between; /* Places space between logo and nav */
+  align-items: flex-start; /* aligns items to top */
+  padding: 40px 60px; /* Optional, adds padding around the header */
+  background-color: #495E57; /* Dark background color */
+  color: #EDEFEE; /* Secondary Gray text color */
+  padding: 20px 0; /* Add padding to the top and bottom */
+  text-align: left; /* left align the content */
+}
+
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap when the screen is narrow */
+  justify-content: space-between;
+  width: 90%; /* Ensures the footer content spans the full width */
+}
+
+/* Style the footer image */
+footer img {
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-left: 50px;
+  align-items: center;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul {
+  display: block;
+  justify-content: left;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+footer nav ul li a:hover {
+  color: #ff6600; /* Adds hover effect */
+}
+
