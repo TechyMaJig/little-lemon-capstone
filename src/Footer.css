@@ -1,0 +1,67 @@
+/* Styling for the footer */
+footer {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /*wrap items on smaller screens */
+    justify-content: space-between; /* Places space between logo and nav */
+    align-items: flex-start; /* aligns items to top */
+    padding: 40px 60px;
+    background-color: #495E57; /* Dark background color */
+    color: #EDEFEE; /* Secondary Gray text color */
+    text-align: left; /* left align the content */
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap when the screen is narrow */
+    justify-content: space-between;
+    width: 90%; /* Ensures the footer content spans the full width */
+  }
+
+  /* Style the footer image */
+  footer img {
+    border-radius: 16px;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    margin: 10px 0;
+  }
+
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul {
+    display: block;
+    justify-content: left;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  footer nav ul li {
+    margin: 0 15px;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  footer nav ul li a:hover {
+    color: #ff6600; /* Adds hover effect */
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      justify-content: center;
+      padding: 0px;
+    }
+
+    footer .footer-content {
+      justify-content: center;
+    }
+  }

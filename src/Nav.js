@@ -1,9 +1,9 @@
 import './App.css';
+import './Nav.css';
 
+function Nav() {
 
-const Nav = () => {
-
-    return(
+    return (
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -15,6 +15,6 @@ const Nav = () => {
             </ul>
         </nav>
     );
-};
+}
 
 export default Nav;

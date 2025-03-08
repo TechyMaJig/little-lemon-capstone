@@ -44,107 +44,120 @@ img {
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
 }
 
-img:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow effect on hover */
-}
 
 /* Exclude logo image from drop shadow */
 .logo-img {
   box-shadow: none; /* Remove drop shadow for the logo */
 }
 
-
-header {
-  display: flex; /* Enables flexbox layout */
-  justify-content: space-between; /* Places space between logo and nav */
-  align-items: center; /* Vertically aligns items in the center */
-  padding: 40px 60px; /* Optional, adds padding around the header */
-}
-
-header img {
-  max-width: 100%; /* Ensures the logo scales properly */
-  height: auto; /* Maintain the aspect ratio */
-}
-
-nav {
-  /* Optional: Adjust the styling of your nav if needed */
-}
-nav ul {
-  display: flex; /* Displays the list items horizontally */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
-  list-style-type: none; /* Removes bullet points */
-}
-
-nav ul li {
-  margin-right: 20px; /* Adds space between each link */
-}
-
-nav ul li a {
-  text-decoration: none; /* Removes underline from links */
-  color: #000; /* Sets link color */
-  font-size: 16px; /* Optional: Adjust font size */
-}
-
-nav ul li a:hover {
-  color: #ff6600; /* Optional: Adds hover effect */
-}
-
-/* Styling for the footer */
-footer {
-  display: flex; /* Enables flexbox layout */
-  flex-wrap: wrap; /*wrap items on smaller screens */
-  justify-content: space-between; /* Places space between logo and nav */
-  align-items: flex-start; /* aligns items to top */
-  padding: 40px 60px; /* Optional, adds padding around the header */
-  background-color: #495E57; /* Dark background color */
-  color: #EDEFEE; /* Secondary Gray text color */
-  padding: 20px 0; /* Add padding to the top and bottom */
-  text-align: left; /* left align the content */
-}
-
-footer .footer-content {
-  display: flex;
-  flex-wrap: wrap; /* Ensures items wrap when the screen is narrow */
-  justify-content: space-between;
-  width: 90%; /* Ensures the footer content spans the full width */
-}
-
-/* Style the footer image */
-footer img {
-  border-radius: 8px;
-  margin-right: 20px;
-  margin-left: 50px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 90vw;
+  margin: 0 auto;
+  justify-content: center;
   align-items: center;
 }
 
-footer p {
-  margin: 10px 0;
-}
-
-footer nav {
+.card {
+  border: 1px solid #999;
+  border-radius: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height:100%;
+  box-sizing: border-box;
 }
 
-footer nav ul {
-  display: block;
-  justify-content: left;
-  padding: 0;
-  list-style-type: none;
+.card .content {
+  flex-grow: 1;
+  padding: 0.5rem;
 }
 
-footer nav ul li {
-  margin: 0 15px;
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-footer nav ul li a {
-  text-decoration: none;
+.card img:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow effect on hover */
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.card .content {
+  padding: 0.5rem;
+}
+
+.card .bottom-bar {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #333333;
   color: white;
-  font-size: 14px;
 }
 
-footer nav ul li a:hover {
-  color: #ff6600; /* Adds hover effect */
+.card .bottom-bar img {
+  height: 36px;
+  width: 100%;
+  object-fit: contain;
 }
 
+.card header {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card header h2 {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.card header .price {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .cards {
+      grid-template-columns: 1fr;
+  }
+
+  .card .bottom-bar {
+    width: 100%;
+  }
+}

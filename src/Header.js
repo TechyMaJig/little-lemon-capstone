@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./icons_assets/logo.png";
 import Nav from "./Nav";
 import './App.css';
+import './Header.css'
 
 const Header = () => {
     return (
