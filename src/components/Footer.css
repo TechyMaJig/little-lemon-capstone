@@ -7,6 +7,7 @@ footer {
     padding: 40px 60px;
     background-color: #495E57; /* Dark background color */
     color: #EDEFEE; /* Secondary Gray text color */
+    padding: 20px 0; /* Add padding to the top and bottom */
     text-align: left; /* left align the content */
   }
 
@@ -58,6 +59,7 @@ footer {
   @media (max-width: 768px) {
     footer {
       justify-content: center;
+      align-items: center;
       padding: 0px;
     }
 

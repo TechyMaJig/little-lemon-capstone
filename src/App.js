@@ -1,18 +1,20 @@
-import React from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer'
-import Hero from './Hero';
+// src/App.js
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Main from "./Main";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-  <>
-  <Header />
-  <Hero />
-  <Main />
-  <Footer />
-  </>
+    <BrowserRouter>
+      <Header />
+      <Main />
+      <Footer />
+    </BrowserRouter>
   );
 }
 
 export default App;
+

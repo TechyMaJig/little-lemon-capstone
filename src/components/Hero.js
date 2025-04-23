@@ -1,6 +1,6 @@
 import React from "react";
-import heroImage from "./icons_assets/restauranfood.jpg";
-import './App.css';
+import heroImage from "../icons_assets/restauranfood.jpg";
+import '../App.css';
 import './Hero.css'
 
 
