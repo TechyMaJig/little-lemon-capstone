@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin-top: 12rem;
+  }
+
+  main img {
+    max-width: 100%; /* Ensures the logo scales properly */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .price {
+    color: #EE9972;
+  }

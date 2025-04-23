@@ -1,5 +1,6 @@
 import footerImage from "./icons_assets/restaurant chef B.jpg";
 import './App.css';
+import './Footer.css'
 
 const Footer = () => {
     return (

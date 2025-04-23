@@ -1,0 +1,21 @@
+
+
+header {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Places space between logo and nav */
+    align-items: center; /* Vertically aligns items in the center */
+    padding: 40px 60px; /* Optional, adds padding around the header */
+  }
+
+  header img {
+    max-width: 100%; /* Ensures the logo scales properly */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack logo and nav vertically */
+      align-items: center; /* Center the content */
+      text-align: center; /* Ensure nav text is centered on mobile */
+    }
+  }

@@ -1,0 +1,42 @@
+
+nav {
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+  nav ul {
+    display: flex; /* Displays the list items horizontally */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    list-style: none; /* Removes bullet points */
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Sets link color */
+    font-size: 16px; /* Optional: Adjust font size */
+  }
+
+  nav ul li a:hover {
+    color: #ff6600; /* Optional: Adds hover effect */
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      position: left;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+}
