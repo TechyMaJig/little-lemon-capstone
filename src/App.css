@@ -28,6 +28,34 @@
   color: #61dafb;
 }
 
+/* App.css */
+
+button,
+.MuiButton-root {
+  background-color: #495E57 !important;
+  color: white !important;
+  border-radius: 16px !important;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.MuiButton-root:hover {
+  background-color: #FACE14 !important;
+  color: #000 !important;
+}
+
+/* Optional alert style for the confirmation box */
+.confirmation-alert {
+  background-color: #FACE14;
+  color: #000;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

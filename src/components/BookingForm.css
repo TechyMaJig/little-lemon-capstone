@@ -1,0 +1,87 @@
+/* General form control styling */
+.MuiFormControl-root {
+    margin-bottom: 20px;
+  }
+  
+  /* Default label color */
+  .MuiInputLabel-root {
+    color: #000 !important;  /* Default label color */
+    font-weight: 600;
+  }
+  
+  /* When the input is focused, change the label color to green */
+  .Mui-focused .MuiInputLabel-root {
+    color: #006400 !important;  /* Green color when focused */
+  }
+  
+  /* When the input has a value, change the label color to green */
+  .MuiInputLabel-root.MuiInputLabel-shrink {
+    color: #006400 !important; /* Green color when input has data */
+  }
+  
+  /* When the input is focused, change the border color to green */
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #006400 !important; /* Green border color */
+  }
+  
+  /* Change the text color to black inside inputs */
+  .MuiInputBase-root {
+    color: #000 !important;
+  }
+  
+  /* Focus state for input */
+  .MuiOutlinedInput-root.Mui-focused .MuiInputBase-root {
+    color: #000 !important; /* Black text on focus */
+  }
+  
+  /* Input fields default state */
+  .MuiOutlinedInput-root {
+    border-radius: 8px;
+  }
+  
+  /* Button Styling */
+  .MuiButton-root {
+    background-color: #FFB800 !important;  /* Yellow color for button */
+    font-weight: bold;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 5px;
+    text-transform: none;
+    color: #000 !important; /* Ensure button text is black */
+    box-shadow: none; /* Remove any default shadow */
+    border: 1px solid transparent; /* Ensure border does not appear */
+  }
+  
+  /* Hover state for the button */
+  .MuiButton-root:hover {
+    background-color: #FF9E00 !important;  /* Darker yellow on hover */
+    color: #000 !important; /* Ensure button text is still black */
+  }
+  
+  /* Increase form spacing */
+  .MuiBox-root {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;  /* Adds more space between fields */
+    margin-bottom: 30px;  /* Add space below the form before the footer */
+  }
+  
+  /* Responsive adjustments (if needed) */
+  @media (max-width: 600px) {
+    .MuiFormControl-root {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  /* Make form fields max-width 50% on larger screens */
+  @media (min-width: 768px) {
+    .MuiBox-root {
+      max-width: 50%;  /* Set max-width to 50% of the screen on larger devices */
+      margin: auto;  /* Center the form horizontally */
+    }
+  
+    .MuiFormControl-root {
+      width: 100%;  /* Ensure each form control takes full width of the parent */
+    }
+  }
+  

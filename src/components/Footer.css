@@ -9,6 +9,7 @@ footer {
     color: #EDEFEE; /* Secondary Gray text color */
     padding: 20px 0; /* Add padding to the top and bottom */
     text-align: left; /* left align the content */
+    margin-top: 40px;
   }
 
   footer .footer-content {
